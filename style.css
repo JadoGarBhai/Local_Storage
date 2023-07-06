@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    width: 450px;
+    margin-inline: auto;
+    border: 1px solid #000000;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    background-color: rgb(40, 126, 232);
+    color: #ffffff;
+}
+
+.details-rapper{
+    height: 100%;
+    margin-top: 20px;
+    border-top: 2px solid black;
+}
+
+.details-rapper > h2{
+    border: 1px solid black;
+    width: 400px;
+    margin-top: 10px;
+    margin-inline: auto;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    background-color: rgb(40, 126, 232);
+}
+
+.screen{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.result{
+    margin-top: 58px;
+    border: 1px solid black;
+    width: 70%;
+    height: 100px;
+}
+
+.result-rapper{
+    margin-top: 33px;
+    margin-inline: 10px;
+}
+
+.result-rapper > p{
+    font-weight: 600;
+    font-size: 30px;
+    background-color: rgb(89, 147, 218);
+}
+
+.buttons{
+    border: 1px solid black;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: linear-gradient(to top left, rgba(153, 178, 252, 0.3), rgba(57, 133, 196, 0.3));
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.buttons > button{
+    height: 40px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: large;
+    background-color: rgb(69, 140, 226);
+    border: none;
+    color: white;
+}
+
+.buttons > button:hover{
+    background-color: rgb(14, 80, 161);
+}
+
+fieldset {
+    width: 300px;
+    height: 344px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: large;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: linear-gradient(to top left, rgba(173, 194, 255, 0.3), rgba(78, 150, 209, 0.3));
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+legend {
+    font-size: larger;
+    font-weight: 800;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: large;
+    background-color: rgb(40, 126, 232);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(14, 80, 161);
+}
+
+.login{
+    height: 235px;
+}
+
+.hidden{
+    display: none;
+}
