@@ -68,6 +68,7 @@ h1{
 .buttons{
     border: 1px solid black;
     width: 30%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -88,6 +89,10 @@ h1{
 
 .buttons > button:hover{
     background-color: rgb(14, 80, 161);
+}
+
+form{
+    margin-inline: 50px;
 }
 
 fieldset {
