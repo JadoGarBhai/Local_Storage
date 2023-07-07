@@ -1,9 +1,8 @@
                 // Toggle Function
 function toggle() {
     let result = document.getElementById('result');
-    let signUp = document.getElementById('signup');
-    let logIn = document.getElementById('login');
-    let screen = document.querySelector('screen');
+    let signUp = document.getElementById('addUser');
+    let logIn = document.getElementById('loginForm');
 
     if (signUp.classList.contains('hidden')) {
         signUp.classList.remove('hidden');
@@ -18,8 +17,8 @@ function toggle() {
 
 function toggle1() {
     let result = document.getElementById('result');
-    let logIn = document.getElementById('login');
-    let signUp = document.getElementById('signup');
+    let logIn = document.getElementById('loginForm');
+    let signUp = document.getElementById('addUser');
 
     if (logIn.classList.contains('hidden')) {
         logIn.classList.remove('hidden');
@@ -31,3 +30,6 @@ function toggle1() {
         result.classList.remove('hidden');
     }
 }
+
+
+                            // Local Storage

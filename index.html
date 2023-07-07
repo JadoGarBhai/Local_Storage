@@ -26,7 +26,8 @@
                     <!-- Result Section. -->
             <div class="screen">
                         <!-- Hidden Features -->
-                <form class="hidden" id="signup">
+                        <!-- SignUp Form. -->
+                <form class="hidden" id="addUser">
                     <fieldset>
                         <legend>Add User</legend>
                         <div class="form-group">
@@ -46,25 +47,25 @@
                             <input type="password" id="password" name="password" required>
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Signup">
+                            <button id="signup" onclick="save()">Save</button>
                         </div>
                     </fieldset>
                 </form>
 
                         <!-- Login Form. -->
-                <form class="hidden" id="login">
+                <form action="login" class="hidden" id="loginForm">
                     <fieldset class="login">
                         <legend>Login</legend>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="emailL" name="email" required>
                         </div>
                             <div class="form-group">
                             <label for="password">Password:</label>
-                            <input type="password" id="password" name="password" required>
+                            <input type="password" id="passwordL" name="password" required>
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Login">
+                            <button id="login">Login</button>
                         </div>
                     </fieldset>
                 </form>
