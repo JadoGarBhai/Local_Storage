@@ -3,16 +3,20 @@ function toggle() {
     let result = document.getElementById('result');
     let signUp = document.getElementById('addUser');
     let logIn = document.getElementById('loginForm');
+    let table = document.getElementById('table');
+    let delUser = document.getElementById('deleteUser');
 
     if (signUp.classList.contains('hidden')) {
         signUp.classList.remove('hidden');
         logIn.classList.add('hidden');
         result.classList.add('hidden');
+        delUser.classList.add('hidden');
         table.classList.add('hidden');
     } else {
         signUp.classList.add('hidden');
         logIn.classList.add('hidden');
         table.classList.add('hidden');
+        delUser.classList.add('hidden');
         result.classList.remove('hidden');
     }
 }
@@ -21,17 +25,43 @@ function toggle1() {
     let result = document.getElementById('result');
     let logIn = document.getElementById('loginForm');
     let signUp = document.getElementById('addUser');
+    let table = document.getElementById('table');
+    let delUser = document.getElementById('deleteUser');
 
     if (logIn.classList.contains('hidden')) {
         logIn.classList.remove('hidden');
         signUp.classList.add('hidden');
         table.classList.add('hidden');
         result.classList.add('hidden');
+        delUser.classList.add('hidden');
     } else {
         logIn.classList.add('hidden');
         signUp.classList.add('hidden');
         table.classList.add('hidden');
+        delUser.classList.add('hidden');
         result.classList.remove('hidden');
+    }
+}
+
+function toggle3(){
+    let result = document.getElementById('result');
+    let signUp = document.getElementById('addUser');
+    let logIn = document.getElementById('loginForm');
+    let table = document.getElementById('table');
+    let delUser = document.getElementById('deleteUser');
+    
+    if (delUser.classList.contains('hidden')) {
+      delUser.classList.remove('hidden');
+      signUp.classList.add('hidden');
+      logIn.classList.add('hidden');
+      result.classList.add('hidden');
+      table.classList.add('hidden');
+    } else {
+      signUp.classList.add('hidden');
+      logIn.classList.add('hidden');
+      table.classList.add('hidden');
+      delUser.classList.add('hidden');
+      result.classList.remove('hidden');
     }
 }
 
@@ -79,11 +109,11 @@ function save() {
 
     localStorage.setItem('users', JSON.stringify(users));
 
-    updateTable();
+    generateList();
 }
 
 // Function to update the table with user data from local storage
-function updateTable() {
+function generateList() {
     let tableBody = document.querySelector('#table tbody');
 
     tableBody.innerHTML = '';
@@ -107,20 +137,35 @@ function updateTable() {
     let logIn = document.getElementById('loginForm');
     let signUp = document.getElementById('addUser');
     let table = document.getElementById('table');
+    let delUser = document.getElementById('deleteUser');
 
     if (table.classList.contains('hidden')) {
         table.classList.remove('hidden');
         logIn.classList.add('hidden');
         signUp.classList.add('hidden');
+        delUser.classList.add('hidden');
         result.classList.add('hidden');
     } else {
         logIn.classList.add('hidden');
         signUp.classList.add('hidden');
         table.classList.add('hidden');
+        delUser.classList.add('hidden');
         result.classList.remove('hidden');
     }
 };
 
+// Function to delete a user by User ID
 function deleteUser() {
+    let userId = document.getElementById('userId').value;
+  
+    localStorage.removeItem(userId);
+      
+      // Store the updated user data in localStorage
+      localStorage.setItem('users', JSON.stringify(users));
     
-}
+    // Call the function to display users in the table
+    generateList();
+    
+    // Clear the User ID input field
+    document.getElementById('userId').value = '';
+} 

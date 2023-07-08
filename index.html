@@ -26,6 +26,22 @@
                     <!-- Result Section. -->
             <div class="screen">
                         <!-- Hidden Features -->
+                        <!-- Generate List -->
+                <table id="table" class="hidden">
+                    <thead>
+                        <th>Sr. No</th>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+
                         <!-- SignUp Form. -->
                 <form class="hidden" id="addUser">
                     <fieldset>
@@ -52,6 +68,20 @@
                     </fieldset>
                 </form>
 
+                        <!-- Delete User. -->
+                <form id ="deleteUser" class="hidden">
+                    <fieldset class="delete">
+                        <legend>Delete User</legend>
+                        <div class="form-group">
+                            <label for="userId">User ID:</label>
+                            <input type="number" id="userId" name="userId" required>
+                        </div>
+                        <div class="form-group">
+                            <button onclick="deleteUser()">Delete</button>
+                        </div>
+                    </fieldset>
+                </form>
+
                         <!-- Login Form. -->
                 <form action="login" class="hidden" id="loginForm">
                     <fieldset class="login">
@@ -71,30 +101,12 @@
                 </form>
 
 
-                        <!-- Generate List. -->
-                <table id="table" class="hidden">
-                    <thead>
-                        <th>Sr. No</th>
-                        <th>User ID</th>
-                        <th>Name</th>
-                        <th>Address</th>
-                        <th>Email</th>
-                        <th>Password</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-
-                        </tr>
-                    </tbody>
-                </table>
-
-
                 <!-- RESULT SECTION. -->
 
                 <div class="result" id="result">
                     <div class="result-rapper">
                         <p>
-                            Nothing To Display.
+                            Press Button To Perform Action.
                         </p>
                     </div>
                 </div>
@@ -102,7 +114,7 @@
                 <div class="buttons">
                     <button onclick="generateList()">Generate Users List</button>
                     <button onclick="toggle()">Add User/SignUp</button>
-                    <button>Delete User</button>
+                    <button onclick="toggle3()">Delete User</button>
                     <button onclick="toggle1()">Login</button>
                 </div>
             </div>
