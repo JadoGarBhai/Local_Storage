@@ -20,6 +20,7 @@ h1{
     font-weight: 900;
     background-color: rgb(40, 126, 232);
     color: #ffffff;
+    cursor: pointer;
 }
 
 .details-rapper{
@@ -37,6 +38,7 @@ h1{
     font-weight: 700;
     font-size: 50px;
     background-color: rgb(40, 126, 232);
+    cursor: pointer;
 }
 
 .screen{
@@ -152,6 +154,9 @@ input[type="number"] {
 }
 .delete{
     height: 175px;
+}
+.update{
+    height: 405px;
 }
 
 table{
