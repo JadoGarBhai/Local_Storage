@@ -1,7 +1,28 @@
 alert ('Instructions: \n01) Press "Local Storage" to clear local storage. \n02) Click on "User Details" to go back to the Home Page.');
 
-
 // Toggle Function
+
+// function toggleElements(elementIds) {
+//     let result = document.getElementById('result');
+//     let signUp = document.getElementById('addUser');
+//     let logIn = document.getElementById('loginForm');
+//     let table = document.getElementById('table');
+//     let delUser = document.getElementById('deleteUser');
+//     let update = document.getElementById('updateForm');
+
+//     for (let elementId of elementIds) {
+//         let element = document.getElementById(elementId);
+//         if (element.classList.contains('hidden')) {
+//             element.classList.remove('hidden');
+//             result.classList.add('hidden');
+//         } else {
+//             element.classList.add('hidden');
+//             result.classList.remove('hidden');
+//         }
+//     }
+// }
+
+
 function toggle() {
     let result = document.getElementById('result');
     let signUp = document.getElementById('addUser');
@@ -102,27 +123,27 @@ function toggle3(){
 
 function toggle4() {
     let result = document.getElementById('result');
-let logIn = document.getElementById('loginForm');
-let signUp = document.getElementById('addUser');
-let table = document.getElementById('table');
-let delUser = document.getElementById('deleteUser');
-let update = document.getElementById('updateForm');
+    let logIn = document.getElementById('loginForm');
+    let signUp = document.getElementById('addUser');
+    let table = document.getElementById('table');
+    let delUser = document.getElementById('deleteUser');
+    let update = document.getElementById('updateForm');
 
-if (update.classList.contains('hidden')) {
-    update.classList.remove('hidden');
-    table.classList.add('hidden');
-    logIn.classList.add('hidden');
-    signUp.classList.add('hidden');
-    delUser.classList.add('hidden');
-    result.classList.add('hidden');
-} else {
-    logIn.classList.add('hidden');
-    signUp.classList.add('hidden');
-    table.classList.add('hidden');
-    delUser.classList.add('hidden');
-    update.classList.add('hidden');
-    result.classList.remove('hidden');
-}
+    if (update.classList.contains('hidden')) {
+        update.classList.remove('hidden');
+        table.classList.add('hidden');
+        logIn.classList.add('hidden');
+        signUp.classList.add('hidden');
+        delUser.classList.add('hidden');
+        result.classList.add('hidden');
+    } else {
+        logIn.classList.add('hidden');
+        signUp.classList.add('hidden');
+        table.classList.add('hidden');
+        delUser.classList.add('hidden');
+        update.classList.add('hidden');
+        result.classList.remove('hidden');
+    }
 }
 
 function toggle5() {
