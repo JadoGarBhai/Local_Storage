@@ -1,4 +1,4 @@
-// showAlert('Instructions: \n01) Press "Local Storage" to clear local storage. \n02) Click on "User Details" to go back to the Home Page.');
+alert ('Instructions: \n01) Press "Local Storage" to clear local storage. \n02) Click on "User Details" to go back to the Home Page.');
 
 
 // Toggle Function
@@ -193,9 +193,13 @@ function save() {
     }
 
     users.push(user);
+    alert('Add User Successfully.');
 
     localStorage.setItem('users', JSON.stringify(users));
-    alert('Add User Successfully.');
+    document.getElementById('name').value = '';
+    document.getElementById('address').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('password').value = '';
 }
 
 // Function to update the table with user data from local storage
@@ -230,12 +234,14 @@ function deleteUser() {
   
     if (userIndex !== -1) {
         users.splice(userIndex, 1);
+        alert('User Deleted Successfully.');
+    } else{
+        alert('Please Enter Correct User ID.');
     }
   
     localStorage.setItem('users', JSON.stringify(users));
   
     document.getElementById('userId').value = '';
-    alert('User Deleted Successfully.')
 }
 
 
@@ -277,6 +283,11 @@ function update() {
     }
 
     localStorage.setItem('users', JSON.stringify(users));
-    toggle1();
     alert('Updation Complete.');
+
+    document.getElementById('userIdU').value = '';
+    document.getElementById('nameU').value = '';
+    document.getElementById('addressU').value = '';
+    document.getElementById('emailU').value = '';
+    document.getElementById('passwordU').value = '';
 }
