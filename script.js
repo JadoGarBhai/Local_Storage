@@ -1,4 +1,4 @@
-alert ('Instructions: \n01) Press "Local Storage" to clear local storage. \n02) Click on "User Details" to go back to the Home Page.');
+alert ('Press "Local Storage" to clear local storage.');
 
 // Toggle Function
 
@@ -167,13 +167,8 @@ function toggle6() {
     }
 }
 
-function toggle7() {
-    window.location.href='index.html';
-}
-
 function clearAll() {
     localStorage.clear();
-    generateList();
 }
                             // Local Storage
 // Function to generate a random User ID
@@ -230,6 +225,11 @@ function generateList() {
     tableBody.innerHTML = '';
 
     let users = JSON.parse(localStorage.getItem('users'));
+
+    if (!users) {
+        alert("Please add the user's data.");
+        return;
+    };
 
     users.forEach(function(user, index) {
         const row = document.createElement('tr');
@@ -311,4 +311,4 @@ function update() {
     document.getElementById('addressU').value = '';
     document.getElementById('emailU').value = '';
     document.getElementById('passwordU').value = '';
-}
+};
