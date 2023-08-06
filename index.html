@@ -4,27 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Storage</title>
+                    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+                    <!-- BOOTSTRAP JS -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+                        <!-- CSS LINK -->
     <link rel="stylesheet" href="./style.css">
+                        <!-- JAVASCRIPT LINK   -->
     <script defer src="./script.js"></script>
 </head>
 <body>
                         <!-- Starting Header. -->
     <header>
-        <h1 onclick="clearAll()">
+        <h1 onclick="clearAll()" class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
             Local Storage
         </h1>
     </header>
 
                         <!-- Starting Main. -->
     <main>
-        <div class="details-rapper">
+        <div class="details-rapper" class="col-12">
                         <!-- Heading. -->
-            <h2>
+            <h2 class="col-xl-3 col-lg-4 col-md-5 col-sm-12">
                 Users Details
             </h2>
 
                         <!-- Result Section. -->
-            <div class="screen">
+            <div class="col-12 d-xl-flex d-lg-flex d-md-flex justify-content-xl-between justify-content-lg-between justify-content-md-between row-gap-3">
                                                     <!-- HIDDEN FEATURES -->
                         <!-- Generate List -->
                 <table id="table" class="hidden">
@@ -133,7 +139,7 @@
 
                         <!-- RESULT SECTION. -->
 
-                <div class="result" id="result">
+                <div class="result col-xl-8 col-lg-8 col-md-8 col-sm-12" id="result">
                     <div class="result-rapper">
                         <p>
                             Press Button To Perform Action.
@@ -142,7 +148,7 @@
                 </div>
 
                         <!-- Button Section. -->
-                <div class="buttons">
+                <div class="buttons col-xl-3 col-lg-3 col-md-3 col-sm-12">
                     <button onclick="generateList()">Generate Users List</button>
                     <button onclick="toggle()">Add User/SignUp</button>
                     <button onclick="toggle3()">Delete User</button>

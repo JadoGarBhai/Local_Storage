@@ -11,7 +11,7 @@ body{
 }
 
 h1{
-    width: 450px;
+    /* width: 450px; */
     margin-inline: auto;
     border: 1px solid #000000;
     margin-top: 10px;
@@ -24,14 +24,14 @@ h1{
 }
 
 .details-rapper{
-    height: 100%;
+    /* height: 100%; */
     margin-top: 20px;
     border-top: 2px solid black;
 }
 
 .details-rapper > h2{
     border: 1px solid black;
-    width: 400px;
+    /* width: 400px; */
     margin-top: 10px;
     margin-inline: auto;
     text-align: center;
@@ -40,18 +40,9 @@ h1{
     background-color: rgb(40, 126, 232);
 }
 
-.screen{
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-}
-
 .result{
     margin-top: 58px;
     border: 1px solid black;
-    width: 70%;
     height: 100px;
 }
 
@@ -67,8 +58,7 @@ h1{
 }
 
 .buttons{
-    border: 1px solid black;
-    width: 30%;
+    border: 1px solid #000000;
     height: 100%;
     display: flex;
     flex-direction: column;
