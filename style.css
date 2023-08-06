@@ -88,7 +88,7 @@ form{
 
 fieldset {
     width: 300px;
-    height: 344px;
+    /* height: 344px; */
     margin: 0 auto;
     padding: 20px;
     font-size: large;
@@ -102,10 +102,12 @@ fieldset {
 legend {
     font-size: larger;
     font-weight: 800;
+    float: none;
 }
 
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: -20px;
 }
 
 label {
@@ -139,13 +141,13 @@ input[type="number"] {
 }
 
 .login{
-    height: 235px;
+    height: 265px;
 }
 .delete{
-    height: 175px;
+    height: 185px;
 }
 .update{
-    height: 405px;
+    height: 485px;
 }
 
 table{
