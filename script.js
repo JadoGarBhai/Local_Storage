@@ -1,4 +1,4 @@
-// alert ('Press "Local Storage" to clear local storage.');
+alert ('Press "Local Storage" to clear local storage.');
 
 // Toggle Function
 
