@@ -177,3 +177,9 @@ td{
         margin-inline: 0;
     }
 }
+
+@media (max-width: 575px) {
+    form {
+        margin-inline: 0;
+    }
+}
